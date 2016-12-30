@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Broadcast01"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:text="Send" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Broadcast02"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnRegist"
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:text="注册" />
+
+    <Button
+        android:id="@+id/unRegist"
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:text="取消注册" />
+
+</LinearLayout>

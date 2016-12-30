@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.playmusicbysms"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS" /> <!-- 接收短信权限 -->
+    <uses-permission android:name="android.permission.SEND_SMS" /> <!-- 发送短信权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />  
+	
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:allowBackup="true"
+        android:label="@string/app_name" >
+        
+           <activity
+            android:name="com.test.sms.SmsCut"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+       <!--  <receiver android:name="com.cking.smsinterception.SmsReceiver" >
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+ -->
+        <service android:name="com.cking.smsinterception.LocationDataSaveService" />
+        <service android:name="com.cking.smsinterception.QueryDataSaveService" />
+        <service
+            android:name="com.cking.smsinterception.ParametersSetService"
+            android:process="com.cking.navigationsetting" />
+        
+        
+    </application>
+
+</manifest>

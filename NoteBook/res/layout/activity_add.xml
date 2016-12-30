@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/turquoise"
+    android:orientation="vertical"
+    android:padding = "2dp"
+    tools:context=".MainActivity" >
+
+    <!-- Title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:padding = "5dp"
+        android:background="@color/wheat" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:layout_weight="6"
+            android:text="标题" />
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <!-- Content -->
+
+    <EditText
+        android:id="@+id/etContent"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine" />
+
+<!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" 
+         android:layout_weight="5"
+         android:padding="2dp">
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+            android:background="@color/whitesmoke"
+            android:text="保存" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+            android:background="@color/whitesmoke"
+            android:text="取消" />
+
+    </LinearLayout>
+
+</LinearLayout>

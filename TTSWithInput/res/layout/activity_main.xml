@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edittext"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="朗读" 
+        android:id="@+id/rbutton"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存" 
+        android:id="@+id/sbutton"/>
+    <CheckBox  
+         android:id="@+id/checkbox" 
+         android:layout_width="fill_parent" 
+         android:layout_height="wrap_content" 
+         android:text="边写边读" 
+         android:checked="true" 
+         />  
+    
+</LinearLayout>
