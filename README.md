@@ -1,0 +1,2 @@
+# AndroidStudyResource
+Some demo project
